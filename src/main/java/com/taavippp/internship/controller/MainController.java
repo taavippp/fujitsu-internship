@@ -29,6 +29,16 @@ public class MainController {
     @Autowired
     WeatherConditionsRepository weatherConditionsRepository;
 
+    /**
+     * The REST interface.
+     * Works with a GET request to "localhost:8080/api".
+     * Has required query parameters "city" and "vehicle".
+     * "city" is one of: "Tallinn", "Pärnu", "Tartu".
+     * "vehicle" is one of: "car", "scooter", "bike".
+     * Also has optional parameter "timestamp".
+     * "timestamp" is an Unix epoch timestamp (seconds since 01/01/1970).
+     * If missing, the present time will be used.
+    **/
     @GetMapping()
     public ResponseEntity<String> getDeliveryFee(
             @RequestParam(required = false) String city,

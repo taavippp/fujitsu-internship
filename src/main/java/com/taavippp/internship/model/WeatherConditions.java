@@ -5,6 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+/**
+ * A class with different weather data that will is inserted into the database.
+**/
 @Entity
 public class WeatherConditions implements IWeatherData {
 

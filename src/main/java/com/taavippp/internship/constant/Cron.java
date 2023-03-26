@@ -16,6 +16,9 @@ public final class Cron {
     **/
     public static final String expression = "0 15 * ? * *";
     // public static final String expression = "0,30 * * ? * *";
+    /**
+     * When the application was started.
+    **/
     public static final long startupTime = Instant.now().getEpochSecond();
 
     /**

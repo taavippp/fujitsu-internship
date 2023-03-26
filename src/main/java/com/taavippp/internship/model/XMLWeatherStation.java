@@ -2,6 +2,9 @@ package com.taavippp.internship.model;
 
 import org.jdom2.Element;
 
+/**
+ * A class that helps parse the web request's XML data.
+**/
 public class XMLWeatherStation implements IWeatherData {
     private int wmoCode = -1;
     private float airTemperature = 0;
