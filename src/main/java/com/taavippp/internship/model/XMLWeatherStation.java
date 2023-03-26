@@ -14,12 +14,15 @@ public class XMLWeatherStation implements IWeatherData {
             this.wmoCode = Integer.parseInt(element.getChildText("wmocode"));
             this.airTemperature = Float.parseFloat(element.getChildText("airtemperature"));
             this.windSpeed = Float.parseFloat(element.getChildText("windspeed"));
-        } catch (NumberFormatException ignored) {}
+        } catch (NumberFormatException ignored) {
+            // If parsing any of the numbers fails, they should use the default values.
+            // The stations that this app uses should always have valid values.
+        }
     }
 
     @Override
     public int getWMOCode() {
-        return 0;
+        return wmoCode;
     }
 
     @Override

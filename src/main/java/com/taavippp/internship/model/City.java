@@ -7,14 +7,14 @@ package com.taavippp.internship.model;
  * <br/>
  * Value - weather station WMO code (int)
  */
-public enum WeatherStations {
-    TALLINN_HARKU(26038),
-    TARTU_TÕRAVERE(26242),
+public enum City {
+    TALLINN(26038),
+    TARTU(26242),
     PÄRNU(41803);
 
     public final int wmoCode;
 
-    private WeatherStations(int wmoCode) {
+    private City(int wmoCode) {
         this.wmoCode = wmoCode;
     }
 }

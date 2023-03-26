@@ -20,6 +20,8 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/org.jdom/jdom2
 	implementation 'org.jdom:jdom2:2.0.6.1'
+	// https://mvnrepository.com/artifact/com.cronutils/cron-utils
+	implementation 'com.cronutils:cron-utils:9.2.0'
 }
 
 tasks.named('test') {
